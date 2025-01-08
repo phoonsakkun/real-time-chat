@@ -6,7 +6,9 @@ const App = () => {
   const [chat, setChat] = useState([]);
 
   useEffect(() => {
-    const websocket = new WebSocket("ws://localhost:8080");
+    const websocket = new WebSocket(
+      "ws://phoonsak-ws-server-334e32582f07.herokuapp.com/"
+    );
 
     websocket.onopen = () => {
       console.log("WebSocket connected");
