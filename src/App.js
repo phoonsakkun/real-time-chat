@@ -7,7 +7,7 @@ const App = () => {
 
   useEffect(() => {
     const websocket = new WebSocket(
-      "ws://phoonsak-ws-server-334e32582f07.herokuapp.com/"
+      "https://phoonsak-ws-server-334e32582f07.herokuapp.com/"
     );
 
     websocket.onopen = () => {
